@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SwiftBite - Premium Food Delivery</title>
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/navbar.css">
+    <link rel="stylesheet" href="assets/css/home.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+
+<body>
+    <!-- ===== PRELOADER ===== -->
+<div id="preloader">
+    <div class="loader">
+        <div class="ring"></div>
+        <h2>PROFILEX</h2>
+        <p>Loading Experience...</p>
+    </div>
+</div>
+
+<header>
+
+<nav class="navbar">
+
+<div class="logo">
+Swift<span>Bite</span>
+</div>
+
+<ul class="nav-links">
+<li><a href="#">Home</a></li>
+<li><a href="#">Menu</a></li>
+<li><a href="#">Restaurants</a></li>
+<li><a href="#">About</a></li>
+<li><a href="#">Contact</a></li>
+</ul>
+
+<div class="nav-buttons">
+
+<a href="#" class="login-btn">
+Login
+</a>
+
+<a href="#" class="signup-btn">
+Sign Up
+</a>
+
+</div>
+
+</nav>
+
+</header>
+
+<section class="hero">
+
+    <div class="hero-left">
+
+        <h1>
+            Fresh Food<br>
+            Delivered To<br>
+            Your Door
+        </h1>
+
+        <p>
+            Order your favourite meals from the best restaurants around you.
+            Fast delivery. Premium taste.
+        </p>
+
+        <div class="hero-buttons">
+
+            <a href="order.php" button class="order-btn">
+                Order Now
+</a>
+
+            <a href="order.php" button class="menu-btn">
+                Explore Menu
+</a>
+
+        </div>
+
+    </div>
+
+    <div class="hero-right">
+
+        <div class="circle"></div>
+
+        <img src="assets/images/burger.png" class="burger">
+
+    </div>
+
+</section>
+
+<!-- Popular Foods -->
+
+<section class="popular-foods">
+
+    <div class="section-title">
+
+        <h2>Popular Foods</h2>
+
+        <p>Choose from our most loved meals</p>
+
+    </div>
+
+    <div class="food-container">
+
+    <!-- Card 1 -->
+
+    <div class="food-card"
+        data-name="Classic Burger"
+        data-price="5500">
+
+        <span class="discount">20% OFF</span>
+
+        <div class="food-image">
+
+            <img src="assets/images/burger.png" alt="Burger">
+
+            <span class="favorite">❤</span>
+
+        </div>
+
+        <div class="food-info">
+
+            <span class="category">Burger</span>
+
+            <h3>Classic Burger</h3>
+
+            <div class="rating">
+                ⭐ 4.9 <span>(1200+ Reviews)</span>
+            </div>
+
+            <div class="delivery">
+                🚚 20 - 30 mins
+            </div>
+
+            <div class="price">
+
+                <span class="new-price">₦5,500</span>
+
+                <span class="old-price">₦6,900</span>
+
+            </div>
+
+            <button class="add-cart">Add To Cart</button>
+
+        </div>
+
+    </div>
+
+    <!-- Card 2 -->
+
+    <div class="food-card"
+    data-name="pepperroni Pizza"
+        data-price="7000">
+
+        <span class="discount">15% OFF</span>
+
+        <div class="food-image">
+
+            <img src="assets/images/pepperroni pizza.png" alt="Pizza">
+
+            <span class="favorite">❤</span>
+
+        </div>
+
+        <div class="food-info">
+
+            <span class="category">Pizza</span>
+
+            <h3>Pepperoni Pizza</h3>
+
+            <div class="rating">
+                ⭐ 4.8 <span>(980+ Reviews)</span>
+            </div>
+
+            <div class="delivery">
+                🚚 25 - 35 mins
+            </div>
+
+            <div class="price">
+
+                <span class="new-price">₦7,000</span>
+
+                <span class="old-price">₦8,200</span>
+
+            </div>
+
+            <button class="add-cart">Add To Cart</button>
+
+        </div>
+
+    </div>
+
+    <!-- Card 3 -->
+
+    <div class="food-card"
+    data-name="Fried Chicken"
+        data-price="4500">
+
+        <span class="discount">10% OFF</span>
+
+        <div class="food-image">
+
+            <img src="assets/images/fried chicken.png" alt="Chicken">
+
+            <span class="favorite">❤</span>
+
+        </div>
+
+        <div class="food-info">
+
+            <span class="category">Chicken</span>
+
+            <h3>Fried Chicken</h3>
+
+            <div class="rating">
+                ⭐ 4.7 <span>(870+ Reviews)</span>
+            </div>
+
+            <div class="delivery">
+                🚚 15 - 25 mins
+            </div>
+
+            <div class="price">
+
+                <span class="new-price">₦4,500</span>
+
+                <span class="old-price">₦5,000</span>
+
+            </div>
+
+           <button class="add-cart">Add To Cart</button>
+
+        </div>
+
+    </div>
+
+</div>
+</section>
+<!-- Shopping Cart -->
+
+<div class="cart-panel" id="cartPanel">
+
+    <div class="cart-header">
+
+        <h2>🛒 Your Cart</h2>
+
+        <span id="closeCart">&times;</span>
+
+    </div>
+
+    <div class="cart-items" id="cart-items">
+
+        <p>Your cart is empty.</p>
+
+    </div>
+
+    <div class="cart-footer">
+
+        <h3>Total: <span id="total-price">₦0</span></h3>
+
+        <button class="checkout-btn">
+            Proceed to Checkout
+        </button>
+
+    </div>
+
+</div>
+
+<button class="floating-cart" id="openCart">
+
+🛒
+
+</button>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/animation.js"></script>
+<script src="assets/js/cart.js"></script>
+</body>
+</html>
